@@ -3453,6 +3453,12 @@ body {
   z-index: 10001;
 }
 
+#header > div {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 #header > .logo {
   color: #fca311;
   font-family: "Roboto", sans-serif;
@@ -3464,7 +3470,11 @@ body {
   margin-top: 0.125rem;
 }
 
-#header > nav > a {
+#header > div > nav {
+  text-align: end;
+}
+
+#header > div > nav > a {
   color: #838383;
   display: flex-inline;
   font-family: "Roboto", sans-serif;
@@ -3476,7 +3486,7 @@ body {
   height: 100%;
 }
 
-#header > nav > a:hover {
+#header > div > nav > a:hover {
   color: rgba(0, 0, 0, 0.5);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -3484,17 +3494,17 @@ body {
   border-top: 0.5rem solid #fca311;
 }
 
-#header > nav > a:active {
+#header > div > nav > a:active {
   color: #05080f;
 }
 
-#header > nav > a[href="#menu"] {
+#header > div > nav > a[href="#menu"] {
   text-decoration: none;
   letter-spacing: 0.1rem;
   padding-right: 3rem;
 }
 
-#header > nav > a[href="#menu"]:before {
+#header > div > nav > a[href="#menu"]:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
