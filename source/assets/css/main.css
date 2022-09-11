@@ -188,7 +188,7 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background-color: #050913;
 }
 
 body.is-preload *,
@@ -229,7 +229,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #050913;
   color: #282828;
 }
 
@@ -407,7 +407,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #282828;
+  color: #ffffff;
 }
 
 blockquote {
@@ -429,7 +429,7 @@ header.heading {
   border-bottom: 1px solid;
   margin: 0 auto 2rem auto;
   max-width: 80%;
-  text-align: center;
+  text-align: left;
   width: 45.71429rem;
 }
 
@@ -477,7 +477,8 @@ header.heading {
 }
 
 header p {
-  color: #4cbfaf;
+  color: #ffffff;
+  border-bottom: 1rem, solid, #fca311;
 }
 
 /* Row */
@@ -2889,11 +2890,15 @@ table.alt tbody tr td {
 }
 
 .features .feature {
-  text-align: center;
+  text-align: left;
 }
 
 .features .feature > :last-child {
   margin-bottom: 0;
+}
+
+.icon {
+  max-width: 10rem;
 }
 
 @media screen and (min-width: 1281px) {
@@ -3153,7 +3158,7 @@ table.alt tbody tr td {
 
 .wrapper.style2 {
   background-color: #353535;
-  color: rgba(255, 255, 255, 0.5);
+  color: #f3f3f3;
   background: #2f2f2f;
 }
 
@@ -4035,11 +4040,11 @@ body.is-menu-visible #menu {
 }
 
 #banner > .inner {
-  -moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  /* -moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
   -webkit-transition: -webkit-transform 0.75s ease-in-out,
     opacity 0.75s ease-in-out;
   -ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-  transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out; */
   position: relative;
   width: 80%;
 }
@@ -4086,7 +4091,7 @@ body.is-menu-visible #menu {
   width: 7rem;
 }
 
-#banner:before {
+/* #banner:before {
   -moz-transition: opacity 1s ease-in-out;
   -webkit-transition: opacity 1s ease-in-out;
   -ms-transition: opacity 1s ease-in-out;
@@ -4104,7 +4109,7 @@ body.is-menu-visible #menu {
   position: absolute;
   top: 0;
   width: 100%;
-}
+} */
 
 body.is-preload #banner > .inner {
   -moz-transform: translateY(0.75em);
@@ -4115,6 +4120,7 @@ body.is-preload #banner > .inner {
 }
 
 body.is-preload #banner:before {
+  background-image: url("../../images/banner-1.png");
   opacity: 1;
 }
 
@@ -4237,4 +4243,10 @@ body.is-preload #banner:before {
   #footer {
     padding: 3rem 0 1rem 0;
   }
+}
+
+/* Custom */
+
+.centered {
+  text-align: center;
 }
