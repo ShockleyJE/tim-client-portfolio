@@ -275,12 +275,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0 0 1.5rem 0;
-  text-transform: uppercase;
-  letter-spacing: 0.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 h1 a,
@@ -3462,12 +3459,12 @@ body {
 #header > .logo {
   width: 3rem;
   height: 3rem;
-  margin: #fca311 3rem solid;
   background-color: #fca311;
   margin-top: 1.5rem;
 }
 
 #header > .logo > span {
+  padding: 1.25rem;
   color: #fffcf8;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -3475,7 +3472,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-justify: center;
-  margin-left: 1rem;
 }
 
 #header > div > nav {
@@ -3539,8 +3535,19 @@ body {
 }
 
 @media screen and (max-width: 736px) {
-  #header > nav > a {
+  #header > div > {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+  #header > div > nav {
+    width: 100%;
+  }
+  #header > div > nav > a {
     padding: 0 0.5rem;
+  }
+  #header > .logo {
+    display: none;
   }
 }
 
@@ -3558,6 +3565,23 @@ body {
 @media screen and (max-width: 480px) {
   #header {
     min-width: 320px;
+  }
+  #header > .logo {
+    display: none;
+  }
+  #header > .logo > span {
+    display: none;
+  }
+  #header > div > {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+  #header > div > nav {
+    width: 100%;
+  }
+  #header > div > nav > a {
+    padding: 0 0.5rem;
   }
 }
 
@@ -3785,23 +3809,23 @@ body.is-menu-visible #menu {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
+  -moz-align-items: left;
+  -webkit-align-items: left;
+  -ms-align-items: left;
   align-items: center;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+  -moz-justify-content: left;
+  -webkit-justify-content: left;
+  -ms-justify-content: left;
+  justify-content: left;
   background-attachment: fixed;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../../images/banner.png");
   background-position: bottom left;
   background-size: cover;
   cursor: default;
-  height: 90vh;
+  height: 100vh;
   min-height: 40rem;
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -3959,19 +3983,19 @@ body.is-menu-visible #menu {
 }
 
 #banner ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.25) !important;
+  background-image: url("../../images/banner-1.png") !important;
 }
 
 #banner :-moz-placeholder {
-  color: rgba(255, 255, 255, 0.25) !important;
+  background-image: url("../../images/banner-1.png") !important;
 }
 
 #banner ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.25) !important;
+  background-image: url("../../images/banner-1.png") !important;
 }
 
 #banner :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.25) !important;
+  background-image: url("../../images/banner-1.png") !important;
 }
 
 #banner header.heading {
@@ -4017,7 +4041,16 @@ body.is-menu-visible #menu {
   -ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
   transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
   position: relative;
-  width: 100%;
+  width: 80%;
+}
+
+#banner > .inner > #iam {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 0.75rem;
+  border: 0.225rem solid whitesmoke;
 }
 
 #banner > .inner > :last-child {
@@ -4062,7 +4095,7 @@ body.is-menu-visible #menu {
   -webkit-transition-delay: 0.75s;
   -ms-transition-delay: 0.75s;
   transition-delay: 0.75s;
-  background: #202020;
+  background-image: url("../../images/banner-1.png");
   content: "";
   display: block;
   height: 100%;
