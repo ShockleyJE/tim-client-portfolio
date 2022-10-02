@@ -4273,3 +4273,49 @@ body.is-preload #banner:before {
 .centered {
   text-align: center;
 }
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  height: 45rem;
+}
+
+.one-six {
+  flex-basis: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.five-six {
+  flex-basis: 5;
+  display: flex;
+}
+
+.wide-centered {
+  margin: auto;
+  width: 100%;
+}
+
+h4 {
+  font-size: x-large;
+}
+
+.five-six {
+  flex-basis: 6;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.halved {
+}
+
+.flex-container {
+  display: flex;
+}
+
+#about-me-image {
+  height: 10px;
+}
