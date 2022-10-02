@@ -4072,6 +4072,15 @@ body.is-menu-visible #menu {
   border: 0.225rem solid whitesmoke;
 }
 
+#banner > .inner > div > span {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 0.75rem;
+  border: 0.225rem solid whitesmoke;
+}
+
 #banner > .inner > :last-child {
   margin-bottom: 0;
 }
